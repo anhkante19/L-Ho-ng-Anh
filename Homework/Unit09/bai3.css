@@ -1,0 +1,16 @@
+div{
+	display: inline-block;
+}
+.section{
+	background-color: yellow;
+	position: absolute;
+	left: 0;
+	padding: 10px;
+}
+.tab{
+	padding: 10px;
+	margin:01 5px;
+	background-color: black;
+	color: white;
+
+}

@@ -1,0 +1,76 @@
+body{
+	background-image: url("tuyet.jpg");
+}
+
+.container{
+	width:75%;
+	margin: 0 auto;
+	background-color: white;
+}
+#header{
+	background-image: url("123.jpg");
+	background-size: 100%;
+	height: 500px;
+}
+.menu{
+	background-color: #434343;
+}
+.menu>p{
+	display: inline-block;
+}
+.menu>p>a {
+	color:orange;
+}
+.left{
+	width:15%;
+	float: left;
+}
+	.danhmucbg{
+	background-image: url("menu_bar.gif");
+	color:white;
+}
+.center{
+	padding-left: 20px;
+	width: 62%;
+	float: left;
+}
+.right{
+	width:15%;
+	float: left;
+	padding-left: 15px;
+}
+.danhmuc{
+	border:1px black solid;
+}
+.center1{
+	padding-left: 10px;
+	background-color: pink;
+	border-radius: 13px;
+}
+.main_left{
+	background-image: url("main_bar_left.gif");
+	background-size: 100%;
+}
+.mau{
+	color:orange;
+}
+.content2>div>img{
+	width: 25%;
+	float:left;
+}
+.content2>div>p{
+	width: 70%;
+		float:left;
+	/*display: inline-block;*/
+}
+.footer1{
+	width: 100%;
+	height:4px;
+	background-color: orange;
+}
+.footer2{
+	background-color: #434343;
+	text-align:center;
+	height:50px;
+	color:white;
+}

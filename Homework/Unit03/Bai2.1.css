@@ -1,0 +1,16 @@
+.item{
+	width: 10%;
+	display: inline-block;
+	border: 1px solid gray;
+}
+.item:hover{
+	border: 1px solid orange
+
+}
+.chu {
+	color: orange;
+}
+.so{
+	color: red;
+	cursor: pointer;
+}

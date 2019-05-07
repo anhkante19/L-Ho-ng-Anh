@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<input type="text" id="text" value="">
+	<button id="add">add</button>
+	<button id="check">CheckAll</button>
+	<button id="uncheck">UnCheckAll</button>
+	<button id="delall">DeleteAll</button>
+	<div class="table-reponsive">
+		<table class="table table-hover">
+			<tbody id="content">
+				
+
+			</tbody>
+		</table>
+		
+	</div>
+	<script type="text/javascript">
+		var i=1
+		document.getElementById('add').addEventListener('click',function(){
+			var input= document.getElementById('text')
+			var content = document.getElementById('content') 
+			if (input.value=='')
+			{
+				alert('Vui long nhap thong tin')
+				return
+			}
+			content.innerHTML= content.innerHTML+`<tr id="` +i +`">
+													<td>`
+														+ input.value+
+													`</td>
+													<td>
+														<button onclick="removeItem(`+i +`)">Del</button>
+													</td>
+													<td>
+														<button >Change</button>
+													</td>
+													<td>
+														<input type="checkbox">
+													</td>
+
+
+												</tr>`
+		
+		input.value='' 
+		i++
+	})
+		function removeItem(i){
+			document.getElementById(i).remove()
+		}
+		document.getElementById('check').addEventListener('click',function(){
+			var checkboxs = document.getElementsByTagName('input')
+
+			for(var j= checkboxs.length -1; j >=0; j--){
+				checkboxs[j]. checked= true
+			}
+		})
+		document.getElementById('uncheck').addEventListener('click',function(){
+			var checkboxs = document.getElementsByTagName('input')
+
+			for(var j= checkboxs.length -1; j >=0; j--){
+				checkboxs[j]. checked= false
+			}
+		})
+	</script>
+</body>
+
+</html>

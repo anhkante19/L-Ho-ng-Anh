@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title class="item">Zent Group</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+	<style>
+	#menu{
+		height: 100px;
+		background: red;
+		padding-left: 0;
+		width: 70%;
+
+	}
+	#menu>.item
+	{
+		float: left;
+		list-style: none;
+		padding: 0 10px;
+		line-height: 50px;
+		position: relative;
+
+	}
+	#menu>.item>a
+	{
+		text-decoration: none;
+		color: white;
+
+	}
+	.home{
+		position: absolute;
+		color: blue;
+		list-style: none;
+		padding-left: 0;
+		display: none;
+		width: 100px;
+		left: 0;
+
+
+	}
+	#menu>.item:hover .home{
+		display: block;
+
+	}
+	.home>li{
+		background: green;
+
+		margin-bottom:1px;
+	}
+	.box
+	{
+
+	}
+
+</style>
+</head>
+<body>
+	<ul id="menu">
+		<li class="item">
+			<a href=""><i class="fas fa-home"></i>Home</a>
+			<ul class="home">
+				<li>C</li>
+				<li>PHP</li>
+				<li>java</li>
+
+			</ul>
+		</li>
+		<li class="item">
+			<a href="">Muc 1</a>
+		</li>
+		<li  class="item"><a href="">Muc 2</a></li>
+	</ul>
+	<div class="box"></div>
+	<div class="subbox"></div>
+</body>
+</html>

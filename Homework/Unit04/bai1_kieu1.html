@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+	<style type="text/css">
+	#menu{
+		height: 50px;
+		background: green;
+		padding-left: 0;
+		width: 100%;
+		color: white;
+
+	}
+	#menu>.item
+	{
+		float: left;
+		list-style: none;
+		padding: 0 20px;
+		line-height: 50px;
+		position: relative;
+
+	}
+	#menu>.item>a
+	{
+		text-decoration: none;
+		color: white;
+
+	}
+	.home{
+		position: absolute;
+		color: blue;
+		list-style: none;
+		padding-left: 0;
+		display: none;
+		width: 100px;
+		left: 0;
+
+
+	}
+	#menu>.item:hover .home{
+		display: block;
+
+	}
+	.home>li{
+		background: green;
+		color: white;
+		margin-bottom:1px;
+	</style>
+</head>
+<body>
+	<ul id="menu">
+		<li class="item">Logo 24h<link rel="stylesheet" type="text/css" href=""></li>
+		<li class="item">Xem danh mục</li>
+		<li class="item">Tin tức quốc tế</li>
+		<li class="item">Hi-tech
+			<ul class="home">
+				<li>Dế sắp ra lò</li>
+				<li>Tin tức công nghệ</li>
+				<li>Mỹ nữ và công nghệ</li>
+				<li>Laptop giá rẻ</li>
+				<li>Dế giá rẻ</li>
+				<li>Điện thoại</li>
+				<li>Máy tính xách tay</li>
+				<li>Máy nghe nhạc</li>
+				<li>Máy ảnh và camera số</li>
+				<li>Các sản phẩm khác</li>
+				<li>Thế giới công nghệ</li>
+				<li>Máy tính bảng</li>
+				<li>Đánh giá sản phẩm</li>
+				<li>Điện tử gia dụng</li>
+			</ul>
+		</li>
+
+		<li class="item">Showbiz</li>
+		<li class="item">Giải trí</li>
+		<li class="item">Sống trẻ</li>
+		<li class="item">Thể thao</li>
+		<li class="item">Sức khỏe</li>
+		<li class="item">Video</li>
+		<li class="item">Phái đẹp</li>
+		<li class="item">Game</li>
+		<li class="item"><i class="fas fa-search"></i></li>
+	</ul>
+</body>
+</html>

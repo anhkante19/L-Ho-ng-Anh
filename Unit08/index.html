@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" onclick="alert('Le Hoang Anh') value=" Click me ">
+	
+	<script type="text/javascript">
+		function checkSoNguyenTo(a){
+			var flag = true
+			for (var i=2; i <= Math.ceil(Math.sqrt(parseInt(a))); 1++){
+				if (parseInt(a)% i ==0 ){
+					flag = true
+					break
+				}
+			}
+			return flag
+		}
+		if (checkSoNguyenTo(9))
+			alert('so Nguyen to')
+		else
+			alert('khong phai la so nguyen to')
+	</script>
+		
+	
+</body>
+</html>
