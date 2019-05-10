@@ -1,0 +1,32 @@
+#header{
+	height: 80px;
+	background: green;
+	width: 100%
+}
+#menu{
+	color: white;
+	font-size: 30px;
+}
+#menu>.muc{
+	float: left;
+	list-style: none;
+	padding: 5px 10px;
+	color: white;
+	line-height:  80px;
+	
+}
+a{
+	display: none;
+}
+
+@media only screen and (max-width: 768px){
+	#header{
+		display: none;
+	}
+	.muc{
+		width:100%;
+	}
+	a{
+		display: block;
+	}
+}
